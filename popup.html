@@ -1,0 +1,29 @@
+// Path: CS50X-Project/popup.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pomodoro Timer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="timer">
+            <div id="workTimer">
+                <h2>Work</h2>
+                <p id="workTimeLeft">25</p>
+                <input type="number" id="workTime" value="25" min="1" max="60">
+            </div>
+            <div id="breakTimer">
+                <h2>Break</h2>
+                <p id="breakTimeLeft">5</p>
+                <input type="number" id="breakTime" value="5" min="1" max="60">
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
